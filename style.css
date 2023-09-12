@@ -1,0 +1,115 @@
+:root {
+    --primary: crimson;
+    --dark: #1f2937;
+    --darkdark: #111827;
+    --light: #f3f4f6;
+    --light-even: #b9bbbe;
+    --secondary: #c43636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Consolas, sans-serif;
+    background: var(--dark);
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--light);
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+th,
+td {
+    border: 2px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: var(--light);
+    background-color: var(--secondary);
+}
+
+tr {
+    background-color: var(--light-even);
+}
+
+tr:nth-child(even) {
+    background-color: var(--light);
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 40px;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.control {
+    text-align: end;
+    margin-right: 9%;
+    padding: 2rem 0;
+}
+
+.control button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    color: var(--light);
+    font-weight: 600;
+    font-size: 1.125rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    background-color: var(--dark);
+}
+
+#name {
+    background: var(--light);
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 30%;
+    border-radius: .5rem;
+    text-align: start;
+}
+
+#name:focus {
+    outline: 2px solid var(--primary);
+}
+
+.closebtn {
+    cursor: pointer;
+}
